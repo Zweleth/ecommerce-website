@@ -3,8 +3,8 @@ body {
     width: 100vw;
     height: 100vh;
     color: #fff;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(https://i.postimg.cc/YqQd6M30/5852824.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(https://i.postimg.cc/kMkrz52c/Pngtree-happy-halloween-background-with-text-1921111.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: repeat;
@@ -27,8 +27,8 @@ nav img {
 }
 
 .nav-link {
-    color: #d608ff;
-    border: 2px solid #d608ff;
+    color: rgb(146, 0, 190);
+    border: 2px solid rgb(146, 0, 190);
     border-radius: 2rem;
     padding: 3px;
 }
@@ -36,7 +36,7 @@ nav img {
 .nav-link:hover {
     animation: Pop 0.6s ease-in-out;
     scale: 1.05;
-    color: #d608ff;
+    color: rgb(146, 0, 190);
 }
 
 .nav-link:active {
@@ -105,7 +105,7 @@ main {
     position: absolute;
     width: 100%;
     height: 100%;
-    border: 4px solid #d608ff;
+    border: 4px solid rgb(146, 0, 190);
     border-radius: 10px; 
     backface-visibility: hidden;
 }
@@ -204,7 +204,7 @@ main {
 
 @keyframes Color {
     0% {color:#fff}
-    50% {color:#d608ff}
+    50% {color: rgb(146, 0, 190)}
     100% {color:#fff}
 }
 
@@ -243,12 +243,12 @@ i p {
 }
 
 .icons i:hover p {
-    color: #d608ff;
+    color: rgb(146, 0, 190);
     transition: 0.5s;
 }
 .icons i:hover{
     animation: BlockPop 0.6s ease-in-out;
-    color: #d608ff;
+    color: rgb(146, 0, 190);
     
 }
 
@@ -295,7 +295,7 @@ form div {
 .form-control:hover,.form-control:focus {
     outline: 20px red;
     background: none;
-    border-color: #d608ff;
+    border-color: rgb(146, 0, 190);
     
 }
 
@@ -317,8 +317,8 @@ form button {
 }
 
 form button:hover {
-    border-color: #d608ff;
-    color: #d608ff;
+    border-color: rgb(146, 0, 190);
+    color: rgb(146, 0, 190);
 }
 
 form button:active {
@@ -336,8 +336,8 @@ form button {
 }
 
 form button:hover {
-    border-color:#d608ff;
-    color: #d608ff;
+    border-color:rgb(146, 0, 190);
+    color: rgb(146, 0, 190);
 }
 
 form button:active {
