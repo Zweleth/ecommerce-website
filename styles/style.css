@@ -1,0 +1,346 @@
+
+body {
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://i.postimg.cc/YqQd6M30/5852824.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+header {
+    width: 100vh;
+    height: fit-content;
+}
+nav img {
+    width: 3.2rem;
+    height: 3rem;
+    filter: invert(55%) sepia(100%) saturate(7490%) hue-rotate(281deg) brightness(99%) contrast(127%);
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    color: #d608ff;
+    border: 2px solid #d608ff;
+    border-radius: 2rem;
+    padding: 3px;
+}
+
+.nav-link:hover {
+    animation: Pop 0.6s ease-in-out;
+    scale: 1.05;
+    color: #d608ff;
+}
+
+.nav-link:active {
+    scale: 0.9;
+}
+
+@keyframes Pop {
+    0% {
+        scale:1;
+    }
+    50% {
+        scale:1.15;
+    }
+    100% {
+        scale: 1.05;
+    }
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+}
+
+.page {
+    background: none;
+    display: flex;
+    min-width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#home h1 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+#home:hover h1 {
+    animation: Color 3s ease-in-out infinite;
+}
+
+/* Flipcards */
+/* ======================================================================================== */
+/* Flipcards */
+
+.container {
+    width:250px;
+    height: 350px; 
+    content-visibility: auto;
+}
+
+.card {
+    position: relative;
+    width:260px;
+    height: 350px;
+    border: none;
+    
+    transition: transform 0.8s;
+    transform-style: preserve-3d ;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #d608ff;
+    border-radius: 10px; 
+    backface-visibility: hidden;
+}
+
+.front, .modal-body{
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.c1 .front {
+    background-image: url(https://i5.walmartimages.com/asr/8e2e9061-215f-4c72-88f3-4f84febd1c0a_1.510170c34c44d284269e4a7067e8ca07.jpeg);
+}
+.c2 .front {
+    background-image: url(https://m.media-amazon.com/images/I/51f2yzp7LvS._AC_SY580_.jpg);
+}
+.c3 .front {
+    background-image: url(https://m.media-amazon.com/images/I/613OHxhuy9L.jpg);
+}
+.c4 .front {
+    background-image: url(https://m.media-amazon.com/images/I/41yS-WDi7sL.jpg);
+}
+.back {
+    
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+
+}
+.pic {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.info {
+    width: 100%;
+    height: 175px;
+    color:black;
+    text-align: center;
+}
+
+.pic1 {
+    background-image: url(https://i5.walmartimages.com/asr/8e2e9061-215f-4c72-88f3-4f84febd1c0a_1.510170c34c44d284269e4a7067e8ca07.jpeg);
+}
+
+.pic2 {
+    background-image: url(https://m.media-amazon.com/images/I/51f2yzp7LvS._AC_SY580_.jpg);
+}
+
+.pic3 {
+    background-image: url(https://m.media-amazon.com/images/I/613OHxhuy9L.jpg);
+}
+
+.pic4 {
+    background-image: url(https://m.media-amazon.com/images/I/41yS-WDi7sL.jpg);
+}
+
+.container:hover > .card {
+    transform: rotateY(180deg);
+}
+
+.ptext {
+    display: flex;
+    justify-content: center;
+    height: 60%;
+    border-right: 4px solid #fff;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*  */
+.mpic1 {
+    background-image: url(https://i5.walmartimages.com/asr/8e2e9061-215f-4c72-88f3-4f84febd1c0a_1.510170c34c44d284269e4a7067e8ca07.jpeg) ;
+}
+.mpic2 {
+    background-image: url(https://m.media-amazon.com/images/I/51f2yzp7LvS._AC_SY580_.jpg);
+}
+.mpic3 {
+    background-image: url(https://m.media-amazon.com/images/I/613OHxhuy9L.jpg);
+}
+.mpic4 {
+    background-image: url(https://m.media-amazon.com/images/I/41yS-WDi7sL.jpg)
+}
+
+.modal-content {
+    display: flex;
+}
+
+.modal-fade, .modal-dialog, .modal-content {
+    height: 90vh;
+}
+
+@keyframes Color {
+    0% {color:#fff}
+    50% {color:#d608ff}
+    100% {color:#fff}
+}
+
+/* Contact page
+=================================================================================================================================================
+ */
+ 
+ .sec4 {
+    justify-content: space-between;
+    padding: 0 15rem 0 15rem;
+    display: flex;
+ }
+
+ .dh {
+    display: flex;
+    padding-right: 3rem;
+    border: none;
+    border-right: 3px solid gray;
+    height: 70vh;
+    align-items: center;
+    margin-right: 3rem;
+ }
+
+ .icons i{
+    display: flex;
+    font-size: x-large;
+    width:1em;
+    display: flex;
+    flex-direction: row;
+    
+}
+i p {
+    color: rgba(0, 255, 255, 0);
+    font-size: medium;
+    justify-self: center;
+}
+
+.icons i:hover p {
+    color: #d608ff;
+    transition: 0.5s;
+}
+.icons i:hover{
+    animation: BlockPop 0.6s ease-in-out;
+    color: #d608ff;
+    
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    width: 35rem;
+
+}
+
+.icons {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.548);
+    align-items: center;
+    width: 24rem;
+    border-radius: 10px;
+    padding: 2rem 0 2rem 0;
+    
+}
+form div {
+    align-items: center;
+}
+
+form div {
+    width: 90%;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 3px solid gray;
+    background: none;
+    width: 100%;
+    color: gray;
+    border-radius: 0;
+    outline: none;
+}
+.form-control:hover,.form-control:focus {
+    outline: 20px red;
+    background: none;
+    border-color: #d608ff;
+    
+}
+
+
+
+
+
+form p {
+    align-self:flex-start;
+}
+
+form button {
+    background:none;
+    border-radius: 5px;
+    width: 50%;
+    height: 30px;
+    color: gray;
+    border-color: gray;
+}
+
+form button:hover {
+    border-color: #d608ff;
+    color: #d608ff;
+}
+
+form button:active {
+    width: 48%;
+    height: 28px;
+}
+
+form button {
+    background:none;
+    border-radius: 5px;
+    width: 50%;
+    height: 30px;
+    color: gray;
+    border-color: gray;
+}
+
+form button:hover {
+    border-color:#d608ff;
+    color: #d608ff;
+}
+
+form button:active {
+    width: 48%;
+    height: 28px;
+}
